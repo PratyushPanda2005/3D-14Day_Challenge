@@ -17,7 +17,7 @@ emoji4.style.backgroundColor = "#90EE90"
   }
   
   return (
-    <section className="w-screen h-screen font-rethinkSans overflow-hidden">
+    <section className="w-screen h-screen font-rethinkSans ">
       <div className="flex justify-between">
         <div className=" flex-grow ">
           <div className="flex justify-center items-center h-screen  ">
