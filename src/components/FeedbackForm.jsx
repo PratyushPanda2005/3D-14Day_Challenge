@@ -17,10 +17,10 @@ emoji4.style.backgroundColor = "#90EE90"
   }
   
   return (
-    <section className="w-screen h-screen font-rethinkSans">
+    <section className="w-screen h-screen font-rethinkSans overflow-hidden">
       <div className="flex justify-between">
         <div className=" flex-grow ">
-          <div className="flex justify-center items-center h-screen">
+          <div className="flex justify-center items-center h-screen  ">
             <div className="flex flex-col w-[360px]">
               <div>
                 <h1 className="text-[20px] font-[600]">
@@ -519,7 +519,7 @@ emoji4.style.backgroundColor = "#90EE90"
               <div className="bg-buttonBg flex justify-center py-[12px] mt-[24px] rounded-[8px] cursor-pointer">
                 <button className="text-[15px] text-white font-[700]">Submit Feedback</button>
               </div>
-            </div>
+            </div> {/*ends here*/}
           </div>
         </div>
 

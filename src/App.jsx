@@ -8,7 +8,7 @@ function App() {
      <section className='bg-[#FFFFFF] h-screen w-screen hidden lg:flex '>
 <FeedbackForm/>
      </section>
-     <section className='lg:hidden'>
+     <section className='lg:hidden '>
       <FeedbackMob/>
      </section>
     </>
