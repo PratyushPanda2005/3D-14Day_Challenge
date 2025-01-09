@@ -1,21 +1,6 @@
 import abstract from "../assets/abstract.png";
 export default function FeedbackForm() {
-  const toggleBg5 = ()=> {
-    const emoji5 = document.querySelector('#emoji5')
-    const currentColor = window.getComputedStyle(emoji5).backgroundColor;
 
-    if (currentColor === 'green') { 
-        emoji5.style.backgroundColor = '#FFF8E5';
-    } else {
-        emoji5.style.backgroundColor = 'green';
-    }
-  }
-  const toggleBg4 = ()=> {
-const emoji4 = document.querySelector('#emoji4')
-emoji4.style.backgroundColor = "#90EE90"
-
-  }
-  
   return (
     <section className="w-screen h-screen font-rethinkSans overflow-x-hidden">
       <div className="flex justify-between">
@@ -26,7 +11,7 @@ emoji4.style.backgroundColor = "#90EE90"
                 <h1 className="text-[20px] font-[600]">
                   Customer feedback survey
                 </h1>
-                <p className="mt-[8px] leading-[18px] text-customText">
+                <p className="mt-[8px] leading-[20px] text-customText">
                   We’d love to hear your thoughts on our product! Please share
                   your feedback with us.
                 </p>
@@ -36,7 +21,7 @@ emoji4.style.backgroundColor = "#90EE90"
                   Enter Full Name
                 </label>
                 <input
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   id="name"
                   placeholder="e.g Mark Zuckerberg"
                   type="text"
@@ -47,7 +32,7 @@ emoji4.style.backgroundColor = "#90EE90"
                   Email Address
                 </label>
                 <input
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g myemail@gmail.com"
                   id="email"
                   type="email"
@@ -58,7 +43,7 @@ emoji4.style.backgroundColor = "#90EE90"
                   Phone number
                 </label>
                 <input
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g 813 234 2453"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                   id="phone"
@@ -71,7 +56,7 @@ emoji4.style.backgroundColor = "#90EE90"
                   Your feedback
                 </label>
                 <textarea
-                  className="pt-[10px] resize-none pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[10px] resize-none pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="Write your message here"
                   rows={4}
                   
@@ -98,8 +83,8 @@ emoji4.style.backgroundColor = "#90EE90"
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -176,8 +161,8 @@ emoji4.style.backgroundColor = "#90EE90"
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -258,8 +243,8 @@ emoji4.style.backgroundColor = "#90EE90"
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -330,7 +315,7 @@ emoji4.style.backgroundColor = "#90EE90"
                     </svg>
                   </span>
                 </div>
-                <div id="emoji4" onClick={toggleBg4} className="p-[12px] bg-emojiBg rounded-[8px]">
+                <div id="emoji4"  className="p-[12px] bg-emojiBg rounded-[8px]">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -338,10 +323,10 @@ emoji4.style.backgroundColor = "#90EE90"
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg className="w-[16px] h-[16px]"
+                    <svg className=""
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -424,7 +409,7 @@ emoji4.style.backgroundColor = "#90EE90"
                     </svg>
                   </span>
                 </div>
-                <div id="emoji5" onClick={toggleBg5} className="p-[12px] bg-emojiBg rounded-[8px] ">
+                <div id="emoji5"  className="p-[12px] bg-emojiBg rounded-[8px] ">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -434,8 +419,8 @@ emoji4.style.backgroundColor = "#90EE90"
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -517,8 +502,8 @@ emoji4.style.backgroundColor = "#90EE90"
                   </span>
                 </div>
               </div>
-              <div className="bg-buttonBg flex justify-center py-[12px] mt-[24px] rounded-[8px] cursor-pointer">
-                <button className="text-[15px] text-white font-[700]">Submit Feedback</button>
+              <div id="btn" className="bg-buttonBg flex justify-center py-[12px] mt-[24px] rounded-[8px] cursor-pointer hover:shadow-lg hover:shadow-customShadow duration-700">
+                <button className=" text-[15px] text-white font-[700]">Submit Feedback</button>
               </div>
             </div> {/*ends here*/}
           </div>

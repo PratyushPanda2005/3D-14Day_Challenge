@@ -12,6 +12,8 @@ export default {
         customText: '#999999',
         emojiBg: '#FFF8E5',
         buttonBg: '#414141',
+        inputBorder: '#FFA701',
+        customShadow: '#FECE52',
       },
       fontFamily:{
         'rethinkSans' : ["Rethink Sans", "serif"]
