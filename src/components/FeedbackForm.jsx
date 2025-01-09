@@ -1,4 +1,5 @@
 import abstract from "../assets/abstract.png";
+import { motion } from "motion/react"
 export default function FeedbackForm() {
 
   return (
@@ -17,33 +18,33 @@ export default function FeedbackForm() {
                 </p>
               </div>
               <div className="flex flex-col mt-[24px]">
-                <label className="font-[500]" htmlFor="name">
+                <label className="font-[500] text-[14px]" htmlFor="name">
                   Enter Full Name
                 </label>
                 <input
-                  className="focus:border-inputBorder focus:outline-none pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   id="name"
                   placeholder="e.g Mark Zuckerberg"
                   type="text"
                 />
               </div>
               <div className="flex flex-col mt-[16px]">
-                <label className="font-[500]" htmlFor="email">
+                <label className="font-[500] text-[14px]" htmlFor="email">
                   Email Address
                 </label>
                 <input
-                  className="focus:border-inputBorder focus:outline-none pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g myemail@gmail.com"
                   id="email"
                   type="email"
                 />
               </div>
               <div className="flex flex-col mt-[16px]">
-                <label className="font-[500]" htmlFor="phone">
+                <label className="font-[500] text-[14px]" htmlFor="phone">
                   Phone number
                 </label>
                 <input
-                  className="focus:border-inputBorder focus:outline-none pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder  focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g 813 234 2453"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                   id="phone"
@@ -52,11 +53,11 @@ export default function FeedbackForm() {
                 />
               </div>
               <div className="flex flex-col mt-[16px]">
-                <label className="font-[500]" htmlFor="feedback">
+                <label className="font-[500] text-[14px]" htmlFor="feedback">
                   Your feedback
                 </label>
                 <textarea
-                  className="focus:border-inputBorder focus:outline-none pt-[10px] resize-none pb-[10px] pl-[16px] pr-[16px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[8px] resize-none pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="Write your message here"
                   rows={4}
                   
@@ -65,7 +66,7 @@ export default function FeedbackForm() {
                 ></textarea>
               </div>
               <div className="mt-[6px]">
-                <h1 className="text-customText">0/120 characters</h1>
+                <h1 className="text-customText font-[400]">0/120 characters</h1>
               </div>
               <div className="mt-[16px]">
                 <h1 className="font-[500]">
@@ -73,7 +74,7 @@ export default function FeedbackForm() {
                 </h1>
               </div>
               <div className="flex gap-[8px] mt-[6px]">
-                <div className="p-[12px] bg-emojiBg rounded-[8px]">
+                <div className="p-[12px] bg-emojiBg hover:bg-yellow-100 rounded-[8px]">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -81,7 +82,7 @@ export default function FeedbackForm() {
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg
+                    <motion.svg whileHover={{scale:1.1}}
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -148,10 +149,10 @@ export default function FeedbackForm() {
                           />
                         </clipPath>
                       </defs>
-                    </svg>
+                    </motion.svg>
                   </span>
                 </div>
-                <div className="p-[12px] bg-emojiBg rounded-[8px]">
+                <div className="p-[12px] bg-emojiBg hover:bg-yellow-100 rounded-[8px]">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -159,7 +160,7 @@ export default function FeedbackForm() {
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg
+                    <motion.svg whileHover={{scale:1.1}}
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -230,10 +231,10 @@ export default function FeedbackForm() {
                           />
                         </clipPath>
                       </defs>
-                    </svg>
+                    </motion.svg>
                   </span>
                 </div>
-                <div className="p-[12px] bg-emojiBg rounded-[8px]">
+                <div className="p-[12px] bg-emojiBg hover:bg-yellow-100 rounded-[8px]">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -241,7 +242,7 @@ export default function FeedbackForm() {
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg
+                    <motion.svg whileHover={{scale:1.1}}
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -312,10 +313,10 @@ export default function FeedbackForm() {
                           />
                         </clipPath>
                       </defs>
-                    </svg>
+                    </motion.svg>
                   </span>
                 </div>
-                <div id="emoji4"  className="p-[12px] bg-emojiBg rounded-[8px]">
+                <div id="emoji4"  className="p-[12px] bg-emojiBg hover:bg-yellow-100 rounded-[8px]">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -323,7 +324,7 @@ export default function FeedbackForm() {
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg className=""
+                    <motion.svg whileHover={{scale:1.1}} 
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -406,10 +407,10 @@ export default function FeedbackForm() {
                           />
                         </clipPath>
                       </defs>
-                    </svg>
+                    </motion.svg>
                   </span>
                 </div>
-                <div id="emoji5"  className="p-[12px] bg-emojiBg rounded-[8px] ">
+                <div id="emoji5"  className="p-[12px] bg-emojiBg hover:bg-yellow-100 rounded-[8px] ">
                   <input
                     type="checkbox"
                     className="hidden peer"
@@ -417,7 +418,7 @@ export default function FeedbackForm() {
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg
+                    <motion.svg whileHover={{scale:1.1}}
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -498,7 +499,7 @@ export default function FeedbackForm() {
                           />
                         </clipPath>
                       </defs>
-                    </svg>
+                    </motion.svg>
                   </span>
                 </div>
               </div>

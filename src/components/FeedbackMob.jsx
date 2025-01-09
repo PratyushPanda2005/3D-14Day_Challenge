@@ -19,7 +19,7 @@ export default function FeedbackMob() {
                   Enter Full Name
                 </label>
                 <input
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none focus:border-[2px] pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
                   id="name"
                   placeholder="e.g Mark Zuckerberg"
                   type="text"
@@ -30,7 +30,7 @@ export default function FeedbackMob() {
                   Email Address
                 </label>
                 <input
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none focus:border-[2px] pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g myemail@gmail.com"
                   id="email"
                   type="email"
@@ -41,7 +41,7 @@ export default function FeedbackMob() {
                   Phone number
                 </label>
                 <input
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none focus:border-[2px] pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g 813 234 2453"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                   id="phone"
@@ -54,7 +54,7 @@ export default function FeedbackMob() {
                   Your feedback
                 </label>
                 <textarea
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none focus:border-[2px] pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="Write your message here"
                   rows={6}
                   name="feedback"
@@ -80,8 +80,8 @@ export default function FeedbackMob() {
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -158,8 +158,8 @@ export default function FeedbackMob() {
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -240,8 +240,8 @@ export default function FeedbackMob() {
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -320,10 +320,10 @@ export default function FeedbackMob() {
                     value="happy"
                   />
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
-                    <svg className="w-[16px] h-[16px]"
+                    <svg 
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
@@ -416,8 +416,8 @@ export default function FeedbackMob() {
                   <span className="cursor-pointer text-4xl peer-checked:ring-2 peer-checked:ring-blue-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="17"
-                      height="16"
+                      width="24"
+                      height="24"
                       viewBox="0 0 17 16"
                       fill="none"
                     >
