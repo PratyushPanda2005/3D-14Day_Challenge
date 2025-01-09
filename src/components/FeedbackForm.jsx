@@ -21,7 +21,7 @@ emoji4.style.backgroundColor = "#90EE90"
       <div className="flex justify-between">
         <div className=" flex-grow ">
           <div className="flex justify-center items-center h-screen  ">
-            <div className="flex flex-col w-[360px]">
+            <div className="flex flex-col w-[360px] ">
               <div>
                 <h1 className="text-[20px] font-[600]">
                   Customer feedback survey
@@ -71,9 +71,10 @@ emoji4.style.backgroundColor = "#90EE90"
                   Your feedback
                 </label>
                 <textarea
-                  className="pt-[10px] pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="pt-[10px] resize-none pb-[10px] pl-[16px] pr-[16px] border-[1px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="Write your message here"
-                  rows={6}
+                  rows={4}
+                  
                   name="feedback"
                   id="feedback"
                 ></textarea>
