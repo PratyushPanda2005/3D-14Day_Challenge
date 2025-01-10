@@ -22,7 +22,7 @@ export default function FeedbackForm() {
                   Enter Full Name
                 </label>
                 <input
-                  className="focus:border-inputBorder focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[2px]  border-customBorder rounded-[8px] mt-[4px]"
                   id="name"
                   placeholder="e.g Mark Zuckerberg"
                   type="text"
@@ -33,7 +33,7 @@ export default function FeedbackForm() {
                   Email Address
                 </label>
                 <input
-                  className="focus:border-inputBorder focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[2px]  border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g myemail@gmail.com"
                   id="email"
                   type="email"
@@ -44,7 +44,7 @@ export default function FeedbackForm() {
                   Phone number
                 </label>
                 <input
-                  className="focus:border-inputBorder  focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder  focus:outline-none pt-[8px] pb-[8px] pl-[12px] pr-[12px] border-[2px]  border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="e.g 813 234 2453"
                   pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                   id="phone"
@@ -57,7 +57,7 @@ export default function FeedbackForm() {
                   Your feedback
                 </label>
                 <textarea
-                  className="focus:border-inputBorder focus:outline-none pt-[8px] resize-none pb-[8px] pl-[12px] pr-[12px] border-[1px] focus:border-[2px] border-customBorder rounded-[8px] mt-[4px]"
+                  className="focus:border-inputBorder focus:outline-none pt-[8px] resize-none pb-[8px] pl-[12px] pr-[12px] border-[2px] border-customBorder rounded-[8px] mt-[4px]"
                   placeholder="Write your message here"
                   rows={4}
                   
